@@ -1,2 +1,3 @@
-# university_assigments
-This repository is created for sharing my solutions.
+# University Assigments
+
+<h3>This repository contains my solutions to the assignments.</h3> 
