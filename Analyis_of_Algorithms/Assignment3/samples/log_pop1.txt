@@ -1,0 +1,18 @@
+RBT: 
+Height: 21
+Nodes: 13807
+Min: Agdam
+Max: Tokyo
+BST: 
+Height: 835
+Nodes: 13807
+Min: Agdam
+Max: Tokyo
+Searching for Dhaka(B) with population 12797394
+RBT: 
+P(B):Karachi;L(B):Buenos Aires;R(B):Los Angeles;S:Los Angeles;Pr:Buenos Aires
+BST: 
+P:Los Angeles;L:Buenos Aires;S:Los Angeles;Pr:Buenos Aires
+Deleting a city with population 12797394
+RBT nodes: 13806
+BST nodes: 13806

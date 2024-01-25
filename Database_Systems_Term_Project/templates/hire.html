@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hire Form</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='hire.css') }}">
+</head>
+<body>
+    <button class="previous-button" onclick="window.location.href='/'">Previous</button>
+    <h1>Hire Form</h1>
+    
+    <form action="/hire" method="post">
+        <label for="person">Person:</label>
+        <select id="person" name="person">
+            {% for item in items %}
+                <option> {{item[0]}} {{ item[1] }} {{ item[2] }} {{ item[3] }} </option>
+            {% endfor %}
+        </select><br><br>
+
+        <label for="nationalIDNumber">National ID Number:</label>
+        <input type="text" id="nationalIDNumber" name="nationalIDNumber"><br><br>
+
+        <label for="jobtitle">Job Title:</label>
+        <input type="text" id="jobtitle" name="jobtitle"><br><br>
+
+        <label for="birthdate">Birth Date:</label>
+        <input type="date" id="birthdate" name="birthdate"><br><br>
+
+        <label for="maritalstatus">Marital Status:</label>
+        <div class="option" style="display: inline-block;">
+            <input type="radio" id="single" name="maritalstatus" value="S" checked>
+            <label for="single">Single</label>
+        </div>
+        <div class="option" style="display: inline-block;">
+            <input type="radio" id="married" name="maritalstatus" value="M">
+            <label for="married">Married</label>
+        </div><br><br>
+
+        <label for="gender">Gender:</label>
+        <div class="option" style="display: inline-block;">
+            <input type="radio" id="male" name="gender" value="M" checked>
+            <label for="male">Male</label>
+        </div>
+        <div class="option"  style="display: inline-block;">
+            <input type="radio" id="female" name="gender" value="F">
+            <label for="female">Female</label>
+        </div><br><br>
+
+        <label for="hiredate">Hire Date:</label>
+        <input type="date" id="hiredate" name="hiredate"><br><br>
+
+        <button type="reset">Reset</button>
+        <button type="button" onclick="Hire()">Hire</button>
+    </form>
+    <script type="text/javascript" src="{{ url_for('static', filename='hire.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+RBT: 
+Height: 24
+Nodes: 13807
+Min: Agdam
+Max: Tokyo
+BST: 
+Height: 13806
+Nodes: 13807
+Min: Agdam
+Max: Tokyo
+Searching for Wyoming(B) with population 75938
+RBT: 
+P(B):St Augustine;S:Tailai;Pr:St Augustine
+BST: 
+P:St Augustine;R:Tailai;S:Tailai;Pr:St Augustine
+Deleting a city with population 75938
+RBT nodes: 13806
+BST nodes: 13806

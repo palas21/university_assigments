@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+    <title>Employee Managment System</title>    
+</head>
+<body>
+    <div class="button-container">
+        <button class="hire" onclick="hire()">Hire</button>
+        <button class="fire" onclick="fire()">Fire</button>
+        <button class="update" onclick="update()">Update</button>
+    </div>
+    <div class="search-container top-right">
+        <form action="/action_page" class="search-form">
+            <div class="search-input">
+                <input type="search" placeholder="Search.." name="search">
+                <button type="submit">Submit</button>
+            </div>
+            <div class="search-type">
+                <label>
+                    <input type="radio" name="search_type" value="fullname" checked>
+                    Full Name
+                </label>
+                <label>
+                    <input type="radio" name="search_type" value="jobtitle">
+                    Job Title
+                </label>
+            </div>
+        </form>
+    </div>
+    <h1>Employees</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Job Title</th>
+                <th>Full Name</th>
+                <th>Id</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in items %}
+                <tr>
+                    <td>{{ item[0] }}</td>
+                    <td>{{ item[1] }} {{ item[2] }} {{ item[3] }}</td>
+                    <td>{{item[4]}}</td>
+                    <td>
+                        <a href="/employee_info/{{item[4]}}" class="info-button">Info</a>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+</body>
+</html>

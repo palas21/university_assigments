@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='employee_info.css') }}">
+    <title>Employee Details</title>
+</head>
+<body>
+    <div class="button-container">
+        <button class="go-back" onclick="goBack()">Go Back</button>
+    </div>    
+    <h1>Employee Details</h1>
+
+    {% set attribute_names = ["BusinessEntityID", "PersonType", "NameStyle", "Title", "FirstName", "MiddleName", "LastName", "Suffix", "EmailPromotion", "AdditionalContactInfo", "Demographics", "PersonRowGuid", "PersonModifiedDate", "NationalIDNumber", "LoginID", "JobTitle", "BirthDate", "MaritalStatus", "Gender", "HireDate", "SalariedFlag", "VacationHours", "SickLeaveHours", "CurrentFlag", "EmployeeRowGuid", "EmployeeModifiedDate"] %}
+
+    {% for item in items %}
+        <table>
+            {% for value in item %}
+                <tr>
+                    <td>{{ attribute_names[loop.index0] }}:</td>
+                    <td>{{ value|default('None') }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+    {% endfor %}
+    <script src="{{ url_for('static', filename='employee_info.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Update Form</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='update.css') }}">
+</head>
+<body>
+    <button class="previous-button" onclick="window.location.href='/'">Previous</button>
+    
+    <h1>Update Form</h1>
+    
+    <form> 
+
+        <label for="id">ID:</label>
+        <input type="text" id="id" name="id" placeholder="{{item[0][4]}}" readonly><br><br>
+
+        <label for="firstname">First Name:</label>
+        <input type="text" id="firstname" name="firstname" placeholder="{{item[0][1]}}"><br><br>
+
+        <label for="middlename">Middle Name:</label>
+        <input type="text" id="middlename" name="middlename" placeholder="{{item[0][2]}}"><br><br>
+        
+        <label for="lastname">Surname:</label>
+        <input type="text" id="lastname" name="lastname" placeholder="{{item[0][3]}}"><br><br>
+        
+        <label for="jobtitle">Job Title:</label>
+        <input type="text" id="jobtitle" name="jobtitle" placeholder="{{item[0][0]}}"><br><br>
+        
+        <button type="reset">Reset</button>
+        <button type="button" onclick="update()">Update</button> 
+    </form>
+    <script src="{{ url_for('static', filename='update.js') }}"></script>
+</body>
+</html>
