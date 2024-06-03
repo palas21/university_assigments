@@ -1,0 +1,18 @@
+RBT: 
+Height: 16
+Nodes: 13807
+Min: Ennadai
+Max: Tokyo
+BST: 
+Height: 65
+Nodes: 13807
+Min: Ennadai
+Max: Tokyo
+Searching for Istanbul(B) with population 10061000
+RBT: 
+P(R):Manila;R(R):Moscow;S:Moscow;Pr:Paris
+BST: 
+P:Paris;R:Moscow;S:Moscow;Pr:Paris
+Deleting a city with population 10061000
+RBT nodes: 13806
+BST nodes: 13806

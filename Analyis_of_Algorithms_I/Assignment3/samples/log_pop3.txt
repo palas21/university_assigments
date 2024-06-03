@@ -1,0 +1,18 @@
+RBT: 
+Height: 24
+Nodes: 13807
+Min: Agdam
+Max: Tokyo
+BST: 
+Height: 12204
+Nodes: 13807
+Min: Agdam
+Max: Tokyo
+Searching for Paris(B) with population 9904000
+RBT: 
+P(B):Guangzhou;L(B):Lagos;R(B):Moscow;S:Istanbul;Pr:Seoul
+BST: 
+P:Istanbul;L:Seoul;S:Istanbul;Pr:Seoul
+Deleting a city with population 9904000
+RBT nodes: 13806
+BST nodes: 13806

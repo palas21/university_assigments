@@ -1,0 +1,169 @@
+==8916== Memcheck, a memory error detector
+==8916== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==8916== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==8916== Command: ./main 1
+==8916== 
+Best Schedule for Each Floor
+Floor_1 --> Priority Gain: 340
+Floor_1	Room_1	07:00	09:00
+Floor_1	Room_2	09:00	11:00
+Floor_1	Room_2	12:00	14:00
+Floor_1	Room_2	15:00	17:00
+Floor_2 --> Priority Gain: 320
+Floor_2	Room_2	09:00	12:00
+Floor_2	Room_1	10:00	13:00
+Floor_2	Room_2	14:00	17:00
+Floor_2	Room_2	17:00	20:00
+Floor_3 --> Priority Gain: 325
+Floor_3	Room_2	09:00	10:00
+Floor_3	Room_1	10:00	11:00
+Floor_3	Room_2	11:00	12:00
+Floor_3	Room_3	12:00	13:00
+Floor_3	Room_3	13:00	14:00
+Floor_3	Room_1	14:00	15:00
+Floor_3	Room_2	15:00	16:00
+Floor_3	Room_3	16:00	17:00
+Floor_3	Room_3	17:00	18:00
+Best Use of Budget
+Total Value --> 34.8
+Chair_3
+Chair_2
+Chair_1
+Keyboard_2
+Keyboard_1
+Computer_1
+Desk_3
+Desk_2
+Desk_1
+Cable_Set_2
+Cable_Set_1
+Computer_3
+Computer_2
+Monitor_2
+Monitor_1
+==8916== 
+==8916== HEAP SUMMARY:
+==8916==     in use at exit: 0 bytes in 0 blocks
+==8916==   total heap usage: 249 allocs, 249 frees, 18,641,960 bytes allocated
+==8916== 
+==8916== All heap blocks were freed -- no leaks are possible
+==8916== 
+==8916== For lists of detected and suppressed errors, rerun with: -s
+==8916== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==8952== Memcheck, a memory error detector
+==8952== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==8952== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==8952== Command: ./main 2
+==8952== 
+Best Schedule for Each Floor
+Floor_1 --> Priority Gain: 720
+Floor_1	Room_3	07:45	08:45
+Floor_1	Room_2	07:30	08:45
+Floor_1	Room_1	08:15	10:00
+Floor_1	Room_1	10:15	11:30
+Floor_1	Room_1	12:00	13:30
+Floor_1	Room_1	13:40	15:10
+Floor_1	Room_1	15:30	17:00
+Floor_1	Room_3	17:00	18:00
+Floor_1	Room_3	18:15	19:15
+Floor_1	Room_3	19:40	20:40
+Floor_2 --> Priority Gain: 450
+Floor_2	Room_6	07:35	09:05
+Floor_2	Room_6	09:40	11:10
+Floor_2	Room_6	11:50	13:20
+Floor_2	Room_6	14:00	15:30
+Floor_2	Room_6	16:10	17:40
+Floor_2	Room_5	17:40	19:25
+Floor_3 --> Priority Gain: 510
+Floor_3	Room_2	08:15	10:00
+Floor_3	Room_4	09:15	11:15
+Floor_3	Room_4	11:30	13:35
+Floor_3	Room_4	14:00	16:05
+Floor_3	Room_4	16:30	18:35
+Floor_3	Room_4	18:50	20:55
+Floor_4 --> Priority Gain: 630
+Floor_4	Room_7	09:00	10:15
+Floor_4	Room_3	09:15	10:15
+Floor_4	Room_1	09:45	11:30
+Floor_4	Room_1	11:50	13:35
+Floor_4	Room_1	14:15	16:00
+Floor_4	Room_1	16:30	18:15
+Floor_4	Room_1	18:55	20:40
+Best Use of Budget
+Total Value --> 36.7
+Smartboard
+Chair_2
+Chair_1
+Keyboard_2
+Keyboard_1
+Computer_1
+Mouse
+Desk_3
+Desk_2
+Desk_1
+Cable_Set_2
+Cable_Set_1
+Computer_3
+Monitor_3
+Monitor_2
+Monitor_1
+==8952== 
+==8952== HEAP SUMMARY:
+==8952==     in use at exit: 0 bytes in 0 blocks
+==8952==   total heap usage: 390 allocs, 390 frees, 21,336,897 bytes allocated
+==8952== 
+==8952== All heap blocks were freed -- no leaks are possible
+==8952== 
+==8952== For lists of detected and suppressed errors, rerun with: -s
+==8952== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+==8996== Memcheck, a memory error detector
+==8996== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==8996== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==8996== Command: ./main 3
+==8996== 
+Best Schedule for Each Floor
+Floor_1 --> Priority Gain: 305
+Floor_1	Room_2	09:00	10:30
+Floor_1	Room_3	10:30	12:00
+Floor_1	Room_1	12:00	13:45
+Floor_1	Room_1	14:00	15:30
+Floor_2 --> Priority Gain: 275
+Floor_2	Room_1	09:00	10:30
+Floor_2	Room_4	10:30	12:00
+Floor_2	Room_3	12:00	13:30
+Floor_2	Room_3	14:15	15:30
+Floor_3 --> Priority Gain: 420
+Floor_3	Room_3	09:15	10:45
+Floor_3	Room_1	09:30	11:15
+Floor_3	Room_2	10:30	12:00
+Floor_3	Room_4	10:30	12:00
+Floor_3	Room_1	12:00	13:30
+Floor_3	Room_1	14:00	15:30
+Best Use of Budget
+Total Value --> 41
+Projection_screen
+Projector
+Chair_3
+Chair_2
+Keyboard_1
+Computer_1
+Mouse
+Whiteboard_2
+Desk_3
+Desk_2
+Cable_Set_3
+Cable_Set_2
+Cable_Set_1
+Computer_2
+Monitor_3
+Monitor_2
+Monitor_1
+==8996== 
+==8996== HEAP SUMMARY:
+==8996==     in use at exit: 0 bytes in 0 blocks
+==8996==   total heap usage: 292 allocs, 292 frees, 21,103,878 bytes allocated
+==8996== 
+==8996== All heap blocks were freed -- no leaks are possible
+==8996== 
+==8996== For lists of detected and suppressed errors, rerun with: -s
+==8996== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
